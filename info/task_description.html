@@ -1,39 +1,30 @@
 <p>
-    <i>( Describe task in general )</i>
-</p>
+    Sofi found a chess set in the supply closet on the robots ship. She has decided to learn how to play the game of
+    chess starts by attempting to understand how the knight moves.
+<p>
 
 <p>
-    Sum two passed ints
+    You should find the shortest path for the knight from one point to another on the chessboard.
 </p>
+<img class="for_info_only" src="{{ MEDIA }}short-knight-path.png"/>
+<img class="for_editor_only" src="{{ MEDIA }}short-knight-path.png" width="380px"/>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
+<p>You can learn more about chess here on <a title="chess on wikipedia" href="/mission/outside/?url=http%3A//en.wikipedia.org/wiki/Chess">Wikipedia</a>.
 
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
+<p><strong>Input: </strong>Start and end field marked by a dash, a string</p>
 
-<p>
-    <strong>Output: </strong> Int. 
-</p>
+<p><strong>Output: </strong>The number of moves in the shortest path the knight can take, an integer.</p>
 
+<p><strong>Example:</strong></p>
+<pre class="brush: python">checkio("b1-d5") == 2, "First"
+checkio("a6-b8") == 1, "Second"
+checkio("h1-g2") == 4, "Third"
+checkio("h8-d7") == 3, "Fourth"
+checkio("a1-h8") == 6, "Fifth"
+</pre>
 
-
-<div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
-    <p>
-        <strong>Example:</strong>
-    </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
-</div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    This can help for game mechanics and learning the paths searching algorithms.
 </p>
