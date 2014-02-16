@@ -24,6 +24,11 @@ TESTS = {
     "Extra": [
         {"input": "b2-d5", "answer": 3, "explanation": [[-1, 2], [1, 2], [2, -1]]},
         {"input": "a5-b8", "answer": 2, "explanation": [[2, 1], [-1, 2]]},
+
+        {"input": "b2-a1", "answer": 4, "explanation": [[2, 1], [-1, 2], [-1, -2], [-1, -2]]},
+        {"input": "g7-h8", "answer": 4, "explanation": [[-1, -2], [-1, 2], [2, -1], [1, 2]]},
+
+
         {"input": "h3-g2", "answer": 2, "explanation": [[-2, 1], [1, -2]]},
         {"input": "h4-d7", "answer": 3, "explanation": [[-1, 2], [-1, 2], [-2, -1]]},
         {"input": "a2-h8", "answer": 5, "explanation": [[1, 2], [1, 2], [1, 2], [2, -1], [2, 1]]},
@@ -34,3 +39,5 @@ TESTS = {
         {"input": "c2-d5", "answer": 2, "explanation": [[-1, 2], [2, 1]]}
     ]
 }
+assert checkio("b2-a1") == 4, "to lower-left corner"
+assert checkio("g7-h8") == 4, "to upper-right corner"
