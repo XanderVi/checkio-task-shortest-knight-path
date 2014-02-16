@@ -39,5 +39,3 @@ TESTS = {
         {"input": "c2-d5", "answer": 2, "explanation": [[-1, 2], [2, 1]]}
     ]
 }
-assert checkio("b2-a1") == 4, "to lower-left corner"
-assert checkio("g7-h8") == 4, "to upper-right corner"
