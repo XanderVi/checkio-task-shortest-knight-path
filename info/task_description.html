@@ -4,16 +4,29 @@
 <p>
 
 <p>
-    You should find the shortest path for the knight from one point to another on the chessboard.
+    Chess is played on a square board of eight rows (called ranks and denoted with numbers 1 to 8) and eight columns
+    (called files and denoted with letters a to h) of squares.
 </p>
+<p>
+    The knight moves to any of the closest squares that are not on the same rank, file, or diagonal,
+    thus the move forms an "L"-shape: two squares vertically and one square horizontally, or two squares horizontally
+    and one square vertically.
+</p>
+
+<p>
+    You are given start and final squares as chess coordinates separated by a hyphen.
+    You should find the length of the shortest path for the knight from one point to another on the chessboard.
+</p>
+<p style="text-align: center;">
 <img class="for_info_only" src="{{ MEDIA }}short-knight-path.png"/>
 <img class="for_editor_only" src="{{ MEDIA }}short-knight-path.png" width="380px"/>
+</p>
 
-<p>You can learn more about chess here on <a title="chess on wikipedia" href="/mission/outside/?url=http%3A//en.wikipedia.org/wiki/Chess">Wikipedia</a>.
+<p>You can learn more about chess here on <a title="chess on wikipedia" href="http://en.wikipedia.org/wiki/Chess">Wikipedia</a>.
 
-<p><strong>Input: </strong>Start and end field marked by a dash, a string</p>
+<p><strong>Input: </strong>Squares coordinates as a string.</p>
 
-<p><strong>Output: </strong>The number of moves in the shortest path the knight can take, an integer.</p>
+<p><strong>Output: </strong>The number of moves in the shortest path the knight can take as an integer.</p>
 
 <p><strong>Example:</strong></p>
 <pre class="brush: python">checkio("b1-d5") == 2, "First"
@@ -26,5 +39,12 @@ checkio("a1-h8") == 6, "Fifth"
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    This task can help you for learning game mechanics and the paths searching algorithms.
+    Let's remember about chess and look how we can use pathfinding and computer science in this awesome game.
+    The game structure and nature of chess is related to several branches of mathematics.
+    Many combinatorical and topological problems connected to chess were known of for hundreds of years.
+</p>
+
+<p>
+    <strong>Precondition:</strong> An input string satisfies regexp "[a-h][1-8]-[a-h][1-8]".<br>
+    start_cell != end_cell
 </p>
