@@ -1,0 +1,19 @@
+"use strict";
+
+function knightPath(cells) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    // These "asserts" are used for self-checking and not for an auto-testing
+
+    assert.equal(knightPath("b1-d5"), 2)
+    assert.equal(knightPath("a6-b8"), 1)
+    assert.equal(knightPath("h1-g2"), 4)
+    assert.equal(knightPath("h8-d7"), 3)
+    assert.equal(knightPath("a1-h8"), 6)
+
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
